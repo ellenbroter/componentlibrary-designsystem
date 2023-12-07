@@ -1,0 +1,12 @@
+.star_rating {
+	user-select: none;
+}
+
+.star {
+	font-size: var(--font-size-large);
+	color: var(--color-accent-1);
+}
+
+.star:hover {
+	cursor: pointer;
+}

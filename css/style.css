@@ -1,0 +1,65 @@
+html {
+	font-size: var(--font-size-base);
+}
+
+body {
+	font-family: 'Favorit Mono', sans-serif;
+}
+
+header {
+	text-align: center;
+	padding: 1rem 0 1rem 0;
+	font-size: var(--font-size-large);
+	background-color: var(--color-secondary);
+}
+
+.header__title-small {
+	font-size: var(--font-size-small);
+	color: var(--color-tertiary);
+}
+
+.page-wrapper {
+	padding: var(--spacing-medium);
+	display: flex;
+	flex-flow: row nowrap;
+	gap: var(--spacing-large);
+}
+
+
+.overview__button {
+	color: var(--color-tertiary);
+	font-size: var(--font-size-medium);
+}
+
+.overview__button:hover,
+.overview__button--active {
+	color: var(--color-primary);
+}
+
+.component {
+	font-family: 'Favorit';
+	display: none;
+	flex-flow: column nowrap;
+	gap: var(--spacing-large);
+	margin-left: 1.5rem;
+}
+
+.component--visible {
+	display: flex;
+}
+
+.component-state {
+	display: flex;
+	width: 100%;
+	flex-flow: column nowrap;
+	gap: var(--spacing-small);
+}
+
+.component-state__name {
+	color: var(--color-tertiary);
+}
+
+::selection {
+	color: var(--color-secondary);
+	background-color: var(--color-accent-1);
+ }

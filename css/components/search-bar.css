@@ -1,0 +1,14 @@
+label {
+	display: block;
+}
+
+.search-input {
+	padding: var(--spacing-small);
+	border-radius: var(--border-radius);
+	border: 2px solid var(--color-primary);
+	background-color: var(--color-secondary);
+}
+
+.search-bar::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+  }

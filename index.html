@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Component library by Ellen Brøter</title>
+
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/variables.css">
+		<link rel="stylesheet" href="./css/fonts.css">
+		<link rel="stylesheet" href="./css/style.css">
+
+		<link rel="stylesheet" href="./css/components/accordion.css">
+		<link rel="stylesheet" href="./css/components/button.css">
+		<link rel="stylesheet" href="./css/components/input-checkbox.css">
+		<link rel="stylesheet" href="./css/components/input-radio.css">
+		<link rel="stylesheet" href="./css/components/counter.css">
+		<link rel="stylesheet" href="css/components/star-rating.css">
+		<link rel="stylesheet" href="./css/components/breadcrumbs.css">
+		<link rel="stylesheet" href="./css/components/search-bar.css">
+		<link rel="stylesheet" href="./css/components/file-upload.css">
+		<link rel="stylesheet" href="./css/components/switcher.css">
+	</head>
+
+	<body>
+		<header>
+			<div>
+				Component library <span class="header__title-small">by Ellen Brøter</span>
+			</div>
+		</header>
+		<div class="page-wrapper">
+			<aside class="overview">
+				<ul>
+					<li>
+						<button data-component-to-show="accordion" class="overview__button overview__button--active">
+							Accordion
+						</button>
+					</li>
+					
+					<li>
+						<button data-component-to-show="button" class="overview__button">
+							Button
+						</button>
+					</li>
+					
+					<li>
+						<button data-component-to-show="checkbox" class="overview__button">
+							Checkbox
+						</button>
+					</li>
+					
+					<li>
+						<button data-component-to-show="radio" class="overview__button">
+							Radio
+						</button>
+					</li>
+
+					<li>
+						<button data-component-to-show="counter" class="overview__button">
+							Counter
+						</button>
+					</li>
+
+					<li>
+						<button data-component-to-show="star-rating" class="overview__button">
+							Star rating
+						</button>
+					</li>
+
+					<li>
+						<button data-component-to-show="breadcrumbs" class="overview__button">
+							Breadcrumbs
+						</button>
+					</li>
+
+					<li>
+						<button data-component-to-show="search-bar" class="overview__button">
+							Search bar
+						</button>
+					</li>
+
+					<li>
+						<button data-component-to-show="file-upload" class="overview__button">
+							File upload
+						</button>
+					</li>
+
+					<li>
+						<button data-component-to-show="switcher" class="overview__button">
+							Switcher
+						</button>
+					</li>
+				</ul>
+			</aside>
+
+			<main>
+				<div class="component component--visible" data-component-name="accordion">
+					<div class="component-state">
+						<div class="component-state__name">
+							Normal
+						</div>
+
+						<div class="component-state__variant">
+							<div class="accordion">
+								<button class="accordion__toggle">Accordion</button>
+								<div class="accordion__content">This is an accordion</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-state">
+						<div class="component-state__name">
+							Hover	
+						</div>
+
+						<div class="component-state__variant">
+							<div class="accordion accordion--hover">
+								<button class="accordion__toggle">Accordion</button>
+								<div class="accordion__content">This is an accordion</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-state">
+						<div class="component-state__name">
+							Expanded	
+						</div>
+
+						<div class="component-state__variant">
+							<div class="accordion accordion--expanded">
+								<button class="accordion__toggle">Accordion</button>
+								<div class="accordion__content">This is an accordion</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="component" data-component-name="button">
+					<div class="component-state">
+						<div class="component-state__name">
+							Normal
+						</div>
+
+						<div class="component-state__variant">
+							<button class="button">Button</button>
+						</div>
+					</div>
+
+					<div class="component-state">
+						<div class="component-state__name">
+							Hover
+						</div>
+
+						<div class="component-state__variant">
+							<button class="button button--hover">Button</button>
+						</div>
+					</div>
+
+					<div class="component-state">
+						<div class="component-state__name">
+							Active	
+						</div>
+
+						<div class="component-state__variant">
+							<button class="button button--active">Button</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="component" data-component-name="checkbox">
+					<div class="component-state">
+						<div class="component-state__name">Normal</div>
+						<div class="component-state__variant">
+							<div class="input-checkbox">
+								<label class="input-checkbox__label">
+									<input class="input-checkbox__input" hidden type="checkbox" name="option-a">
+									<span class="input-checkbox__text">Option A</span>
+								</label>
+
+								<label class="input-checkbox__label">
+									<input class="input-checkbox__input" hidden type="checkbox" name="option-b">
+									<span class="input-checkbox__text">Option B</span>
+								</label>
+
+								<label class="input-checkbox__label">
+									<input class="input-checkbox__input" hidden type="checkbox" name="option-c">
+									<span class="input-checkbox__text">Option C</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-state">
+						<div class="component-state__name">Hover</div>
+						<div class="component-state__variant">
+							<div class="input-checkbox">
+								<label class="input-checkbox__label input-checkbox__label--hover">
+									<input class="input-checkbox__input" hover hidden type="checkbox" name="option-a">
+									<span class="input-checkbox__text">Option A</span>
+								</label>
+
+								<label class="input-checkbox__label input-checkbox__label--hover">
+									<input class="input-checkbox__input" hover hidden type="checkbox" name="option-b">
+									<span class="input-checkbox__text">Option B</span>
+								</label>
+
+								<label class="input-checkbox__label input-checkbox__label--hover">
+									<input class="input-checkbox__input" hover hidden type="checkbox" name="option-c">
+									<span class="input-checkbox__text">Option C</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-state">
+						<div class="component-state__name">Checked</div>
+						<div class="component-state__variant">
+							<div class="input-checkbox">
+								<label class="input-checkbox__label">
+									<input class="input-checkbox__input" checked hidden type="checkbox" name="option-d">
+									<span class="input-checkbox__text">Option A</span>
+								</label>
+
+								<label class="input-checkbox__label">
+									<input class="input-checkbox__input" checked hidden type="checkbox" name="option-e">
+									<span class="input-checkbox__text">Option B</span>
+								</label>
+
+								<label class="input-checkbox__label">
+									<input class="input-checkbox__input" checked hidden type="checkbox" name="option-f">
+									<span class="input-checkbox__text">Option C</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="component" data-component-name="radio">
+					<div class="component-state">
+						<div class="component-state__name">Normal</div>
+						<div class="component-state__variant">
+							<div class="input-radio">
+								<label class="input-radio__label">
+									<input class="input-radio__input" hidden type="radio" name="yes-or-no" value="yes">
+									<span class="input-radio__text">Yes</span>
+								</label>
+
+								<label class="input-radio__label">
+									<input class="input-radio__input" hidden type="radio" name="yes-or-no" value="no">
+									<span class="input-radio__text">No</span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="component-state">
+						<div class="component-state__name">Checked</div>
+						<div class="component-state__variant">
+							<div class="input-radio">
+								<label class="input-radio__label">
+									<input class="input-radio__input" checked hidden type="radio" name="yes-or-no-2" value="yes">
+									<span class="input-radio__text">Yes</span>
+								</label>
+
+								<label class="input-radio__label">
+									<input class="input-radio__input" hidden type="radio" name="yes-or-no-2" value="no">
+									<span class="input-radio__text">No</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="component" data-component-name="counter">
+					<div class="component-state">
+						<div class="component-state__name">Example</div>
+						<div class="component-state__variant">
+							<div class="counter">
+								<button class="counter__quantity--down" onClick='decreaseCount(event, this)'>-</button>
+								<input class="counter__quantity" type="text" value="1">
+								<button class="counter__quantity--up"  onClick='increaseCount(event, this)'>+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="component" data-component-name="star-rating">
+					<div class="component-state">
+						<div class="component-state__name">
+							Example
+						</div>
+
+						<div class="component-state__variant">
+							<div class="star_rating">
+								<button class="star">&#9734;</button>
+								<button class="star">&#9734;</button>
+								<button class="star">&#9734;</button>
+								<button class="star">&#9734;</button>
+								<button class="star">&#9734;</button>
+								<p class="current_rating">0 of 5</p>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="component" data-component-name="breadcrumbs">
+					<div class="component-state">
+						<div class="component-state__name">
+							Example
+						</div>
+
+						<div class="component-state__variant">
+							<ul class="bredcrumbs">
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Home</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Categories</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Articles</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link breadcrumbs__link--active">Analysis of Component Libraries</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					
+
+			
+				</div>
+
+				<div class="component" data-component-name="search-bar">
+					<div class="component-state">
+						<div class="component-state__name">
+							Search the site
+						</div>
+
+						<search class="component-state__variant">
+							<input type="search" class="search-input"/>
+							<button class="button search-button">Search</button>
+						</search>
+						<p class="error-message"></p>
+					</div>
+				</div>
+
+				<div class="component" data-component-name="file-upload">
+					<div class="component-state">
+						<div class="component-state__name">
+							Example
+						</div>
+
+						<div class="component-state__variant">
+							<input type="file" class="file-upload" name="file-upload" accept=".jpg, .jpeg, .png"/>
+							<button class="file-upload__button">
+								<i class="file-upload__button--icon file-upload__button--check checked"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#080708" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path></svg></i>
+								<i class="file-upload__button--icon file-upload__button--circle-notch"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#080708" viewBox="0 0 256 256"><path d="M232,128a104,104,0,0,1-208,0c0-41,23.81-78.36,60.66-95.27a8,8,0,0,1,6.68,14.54C60.15,61.59,40,93.27,40,128a88,88,0,0,0,176,0c0-34.73-20.15-66.41-51.34-80.73a8,8,0,0,1,6.68-14.54C208.19,49.64,232,87,232,128Z"></path></svg></i>
+								<span class="file-upload__button-text">Submit</span>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="component" data-component-name="switcher">
+					<div class="component-state">
+						<div class="component-state__name">
+							On
+						</div>
+
+						<div class="component-state__variant">
+							<label class="switch">
+								<input checked type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="component-state">
+						<div class="component-state__name">
+							Off
+						</div>
+
+						<div class="component-state__variant">
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							 </label>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script defer src="./js/script.js"></script>
+		<script defer src="./js/file-upload.js"></script>
+		<script defer src="./js/counter.js"></script>
+		<script defer src="./js/star-rating.js"></script>
+		<script defer src="./js/search.js"></script>
+	</body>
+</html>

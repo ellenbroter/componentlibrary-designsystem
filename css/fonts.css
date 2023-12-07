@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Favorit Mono';
+	src: url('../assets/fonts/ABCFavoritMonoEdu-Regular.woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Favorit';
+	src: url('../assets/fonts/ABCFavoritEdu-Light.woff2');
+	font-weight: 400;
+	font-style: normal;
+}

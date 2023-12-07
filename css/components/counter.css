@@ -1,0 +1,25 @@
+.counter {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.counter__quantity--up, .counter__quantity--down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: var(--spacing-large);
+	width: var(--spacing-large);
+	text-align: center;
+}
+
+.counter__quantity {
+	background-color: var(--color-secondary);
+	border: none;
+	border-radius: var(--border-radius);
+	height: var(--size-medium);
+	width: var(--size-medium);
+	text-align: center;
+}

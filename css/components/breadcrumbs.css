@@ -1,0 +1,25 @@
+.breadcrumbs {
+	padding: var(--spacing-small);
+}
+
+.breadcrumbs__item {
+	display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+	content: '/';
+	margin: 0 var(--spacing-small);
+	color: var(--color-secondary);
+}
+
+.breadcrumbs__link {
+	color: var(--color-primary);
+}
+
+.breadcrumbs__link:hover {
+	text-decoration: underline;
+}
+
+.breadcrumbs__link--active {
+	color: var(--color-tertiary);
+}
